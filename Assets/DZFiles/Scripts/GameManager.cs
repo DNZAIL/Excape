@@ -7,7 +7,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] public float levelTime = 300;
-    [SerializeField] public TextMeshPro timeText;
+    [SerializeField] public TextMeshProUGUI timeText;
 
     //Runs timer game loop for game
     IEnumerator Countdown()
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         while (timeLimit > 0)
         {
             timeLimit -= Time.deltaTime;
-            DisplayTime();
+            DisplayTime(timeLimit);
             yield return null;
         }
     }
@@ -33,8 +33,11 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void DisplayTime()
+    public void DisplayTime(float timeLeft)
     {
+        float minutes = Mathf.FloorToInt(timeLeft / 60);
+        float seconds = Mathf.FloorToInt(timeLeft % 60);
 
+        timeText.text = minutes.ToString() + ":" + seconds.ToString();
     }
 }
