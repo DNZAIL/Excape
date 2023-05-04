@@ -1995,6 +1995,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1255193108, guid: a6c01f6ce9a574aacaf91d7dff725222, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 852341412880873669}
+    - target: {fileID: 1255193108, guid: a6c01f6ce9a574aacaf91d7dff725222, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 3269704197549319621}
     - target: {fileID: 5877117467127810037, guid: a6c01f6ce9a574aacaf91d7dff725222, type: 3}
       propertyPath: m_Name
       value: monsterPF
@@ -2151,6 +2159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 172d997ebce9171439a9c52d3994e1ee, type: 3}
+--- !u!1 &852341412880873669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 852341413698361842, guid: 172d997ebce9171439a9c52d3994e1ee, type: 3}
+  m_PrefabInstance: {fileID: 852341412880873668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3269704197549319620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2212,3 +2225,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc58c7fcd0a3fb24db23592b83c3df2d, type: 3}
+--- !u!1 &3269704197549319621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3269704196742813952, guid: fc58c7fcd0a3fb24db23592b83c3df2d, type: 3}
+  m_PrefabInstance: {fileID: 3269704197549319620}
+  m_PrefabAsset: {fileID: 0}
