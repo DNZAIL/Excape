@@ -6,7 +6,7 @@ public class Player2Movement : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    private BoxCollider2D coll;
+    private Collider2D coll;
 
     [SerializeField]
     private LayerMask jumpableGround;
@@ -15,7 +15,7 @@ public class Player2Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<BoxCollider2D>();
+        coll = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
