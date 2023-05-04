@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] public float levelTime = 300;
     [SerializeField] public TextMeshProUGUI timeText;
 
-    private GameObject currentRespawn;
+    [SerializeField] GameObject currentRespawn; //CHANGE TO A PRIVATE VARIABLE LATER; CURRENTLY 1 RESPAWN POINT FOR PLAYTESTING PURPOSES
 
     //Runs timer game loop for game
     IEnumerator Countdown()
@@ -29,12 +30,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    WaitForSeconds delay = new WaitForSeconds(3);
-    //Tracks current respawn point & respawns players
-    IEnumerator DelayRespawn()
+    IEnumerator DelayRespawn(GameObject player)
     {
         FindRespawn();
-        yield return delay;
+        yield return new WaitForSeconds(2);
+        player.transform.position = currentRespawn.transform.position;
     }
 
     // Start is called before the first frame update
@@ -53,12 +53,13 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        SceneManager.LoadScene(0);
         Debug.Log("GameOver");
     }
 
-    public void Respawn()
+    public void Respawn(GameObject player)
     {
-        StartCoroutine("DelayRespawn");
+        StartCoroutine("DelayRespawn", player);
     }
 
     public void FindRespawn()
