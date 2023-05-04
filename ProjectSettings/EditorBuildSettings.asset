@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/DZFiles/GameOver.unity
     guid: c1d364eedaa8cf048b7c2e42ac0477bb
   - enabled: 1
-    path: Assets/MapAndMovement/Scenes/SampleScene2.unity
+    path: Assets/MapAndMovement/Scenes/SampleScene3.unity
     guid: 2c03ce4202142a64ba53d8c009d0de1a
   m_configObjects: {}
