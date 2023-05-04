@@ -14,10 +14,10 @@ public class CameraTrack : MonoBehaviour
     private float minZoom = 60;
     private float maxZoom = 10;
 
-    private Camera camera;
+    private Camera m_camera;
 
     void Start(){
-        camera=GetComponent<Camera>();
+        m_camera=GetComponent<Camera>();
     }
     void LateUpdate(){
         if(Players.Count==0){
@@ -29,7 +29,7 @@ public class CameraTrack : MonoBehaviour
 
     private void zoom(){
         float newZoom = Mathf.Lerp(maxZoom, minZoom, getWidth()/10);
-        camera.fieldOfView = newZoom;
+        m_camera.fieldOfView = newZoom;
     }
     private float getWidth(){
         var bounds = new Bounds(Players[0].position, Vector3.zero);
