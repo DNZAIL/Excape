@@ -12,7 +12,7 @@ public class CameraTrack : MonoBehaviour
     private Vector3 velo;
 
     private float minZoom = 60;
-    private float maxZoom = 10;
+    private float maxZoom = 5;
 
     private Camera m_camera;
 
