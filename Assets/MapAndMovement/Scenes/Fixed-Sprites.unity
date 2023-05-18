@@ -154,6 +154,7 @@ Transform:
   - {fileID: 2130354051}
   - {fileID: 566148928}
   - {fileID: 2005578047}
+  - {fileID: 2147261594}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3712,6 +3713,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1998177899
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 144433672}
+    m_Modifications:
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.925
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3325
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877280683045641234, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+      propertyPath: m_Name
+      value: SpikeObstacle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
 --- !u!1 &2005578046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3723,7 +3785,7 @@ GameObject:
   - component: {fileID: 2005578047}
   - component: {fileID: 2005578048}
   m_Layer: 0
-  m_Name: VoidObstacle (1)
+  m_Name: VoidObstacle_Space
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3805,6 +3867,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
   m_PrefabInstance: {fileID: 3877280684692325267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2147261594 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3877280683045641232, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
+  m_PrefabInstance: {fileID: 1998177899}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &852341412880873668
 PrefabInstance:
@@ -4059,7 +4126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3877280683045641234, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}
       propertyPath: m_Name
-      value: VoidObstacle
+      value: SpikeObstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60574fd7df78a845a29f0aa9ba1d992, type: 3}

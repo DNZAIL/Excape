@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MapAndMovement/Scenes/SampleScene3.unity
     guid: 2c03ce4202142a64ba53d8c009d0de1a
+  - enabled: 1
+    path: Assets/MapAndMovement/Scenes/Fixed-Sprites.unity
+    guid: 6a0a65914ff8d3f428690008b7c27a42
   m_configObjects: {}
