@@ -393,6 +393,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 980441900, guid: fc58c7fcd0a3fb24db23592b83c3df2d, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1468917784}
     - target: {fileID: 3269704196742813952, guid: fc58c7fcd0a3fb24db23592b83c3df2d, type: 3}
       propertyPath: m_Name
       value: Player 2
@@ -1810,6 +1814,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1709289943, guid: 172d997ebce9171439a9c52d3994e1ee, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1468917784}
     - target: {fileID: 852341413698361842, guid: 172d997ebce9171439a9c52d3994e1ee, type: 3}
       propertyPath: m_Name
       value: Player 1
@@ -1891,6 +1899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelTime: 10
   timeText: {fileID: 547779886}
+  currentRespawn: {fileID: 0}
 --- !u!4 &1468917785
 Transform:
   m_ObjectHideFlags: 0
@@ -2007,6 +2016,7 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 0
+  animator: {fileID: 0}
 --- !u!61 &1810663223
 BoxCollider2D:
   m_ObjectHideFlags: 0
