@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class MonsterMovement : MonoBehaviour
 {
-    [SerializeField] 
+    /*[SerializeField] 
     private GameObject player1;
     [SerializeField]
-    private GameObject player2;
+    private GameObject player2;*/
+    [SerializeField]
+    private List<GameObject> Players;
     [SerializeField]
     private float speed;
 
@@ -34,15 +36,15 @@ public class MonsterMovement : MonoBehaviour
 
     private void checkForDistance(){
         Vector2 current=transform.position;
-        Vector2 targ1=player1.transform.position;
-        Vector2 targ2=player2.transform.position;
+        Vector2 targ1=Players[0].transform.position;
+        Vector2 targ2=Players[1].transform.position;
         float dist1=Vector2.Distance(current, targ1);
         float dist2=Vector2.Distance(current, targ2);
         if(dist1<=dist2){
-            target = player1.transform;
+            target = Players[0].transform;
         }
         else{
-            target = player2.transform;
+            target = Players[1].transform;
         }
     }
 }

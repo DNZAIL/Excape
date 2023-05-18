@@ -33,10 +33,11 @@ public class GameManager : MonoBehaviour
     IEnumerator DelayRespawn(GameObject player)
     {
         FindRespawn();
+        player.transform.position = currentRespawn.transform.position;
         player.SetActive(false);
         yield return new WaitForSeconds(2);
         player.SetActive(true);
-        player.transform.position = currentRespawn.transform.position;
+        //player.transform.position = currentRespawn.transform.position;
     }
 
     // Start is called before the first frame update
