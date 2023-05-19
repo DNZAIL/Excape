@@ -1841,7 +1841,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1255193108, guid: a6c01f6ce9a574aacaf91d7dff725222, type: 3}
       propertyPath: speed
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1255193108, guid: a6c01f6ce9a574aacaf91d7dff725222, type: 3}
       propertyPath: player1
@@ -3779,7 +3779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890b16076ae08ad44811c7b3a1db80a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTime: 30
+  levelTime: 60
   timeText: {fileID: 487826073}
   currentRespawn: {fileID: 1927416698}
 --- !u!4 &991579853

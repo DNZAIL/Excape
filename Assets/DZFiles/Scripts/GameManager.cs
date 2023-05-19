@@ -33,9 +33,9 @@ public class GameManager : MonoBehaviour
     IEnumerator DelayRespawn(GameObject player)
     {
         FindRespawn();
-        player.transform.position = currentRespawn.transform.position;
         player.SetActive(false);
         yield return new WaitForSeconds(2);
+        player.transform.position = currentRespawn.transform.position;
         player.SetActive(true);
         //player.transform.position = currentRespawn.transform.position;
     }
