@@ -34,6 +34,16 @@ public class PlayerMovement : MonoBehaviour
         float dirX = Input.GetAxis("P1_Horizontal");
         rb.velocity = new Vector2(dirX * 7f, rb.velocity.y);
 
+        //switches to jump animation layer
+        if(isGrounded())
+        {
+            animator.SetLayerWeight(1, 0);
+        }
+        else
+        {
+            animator.SetLayerWeight(1, 1);
+        }
+
         //if(Input.GetButtonDown("Jump") && isGrounded())
         if(Input.GetKeyDown("w") && isGrounded())
         {
