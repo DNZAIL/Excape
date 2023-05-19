@@ -34,8 +34,9 @@ public class GameManager : MonoBehaviour
     {
         FindRespawn();
         player.SetActive(false);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.5f);
         player.transform.position = currentRespawn.transform.position;
+        yield return new WaitForSeconds(2);
         player.SetActive(true);
         //player.transform.position = currentRespawn.transform.position;
     }

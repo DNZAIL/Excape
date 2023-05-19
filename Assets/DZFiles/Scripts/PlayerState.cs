@@ -13,4 +13,12 @@ public class PlayerState : MonoBehaviour
             gameManager.Respawn(this.gameObject);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.CompareTag("Obstacle"))
+        {
+            gameManager.Respawn(this.gameObject);
+        }
+    }
 }
