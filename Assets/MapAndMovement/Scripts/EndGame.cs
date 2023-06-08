@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class EndGame : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other){
         if(player.Count==2){
-            //load new scene;
+            SceneManager.LoadScene(1);
         }
     }
 

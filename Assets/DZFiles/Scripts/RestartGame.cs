@@ -7,7 +7,7 @@ public class RestartGame : MonoBehaviour
 {
     public void Reset()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(0);
     }
 
     public void Quit()
